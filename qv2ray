@@ -13,7 +13,7 @@ mkdir vcore
 unzip /home/perticon/temp/v2ray_core.zip -d /home/perticon/.config/qv2ray/vcore
 rm ~/temp/v2ray_core.zip
 #Download assets
-mv /home/perticon/Downloads/assets /home/perticon/.config/qv2ray/
+mv /home/perticon/Qv2ray/assets /home/perticon/.config/qv2ray/
 # changing contents of .desktop file
 sudo cp ./v2ray/icon.jpeg /home/perticon/.config/qv2ray/icon.jpeg
 sudo mv ~/Qv2ray.AppImage /home/perticon/.config/qv2ray/Qv2ray.AppImage
