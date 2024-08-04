@@ -7,14 +7,18 @@ wget -O ~/Qv2ray.AppImage https://github.com/Qv2ray/Qv2ray/releases/download/v2.
 sudo apt update
 wget -O v2ray_core.zip https://github.com/v2ray/v2ray-core/releases/download/v4.28.2/v2ray-linux-64.zip
 sudo apt-get install unzip
+cd ~
+chmod a+x Qv2ray.AppImage
 sudo ./Qv2ray.AppImage
-cd /home/perticon/.config/qv2ray/
+cd /home/$(whoami)/.config/qv2ray/
 mkdir vcore
-unzip /home/perticon/temp/v2ray_core.zip -d /home/perticon/.config/qv2ray/vcore
+unzip /home/$(whoami)/temp/v2ray_core.zip -d /home/$(whoami)/.config/qv2ray/vcore
 rm ~/temp/v2ray_core.zip
-mv /home/perticon/Qv2ray/assets /home/perticon/.config/qv2ray/
+cd ~/Qv2ray
+tar -xvzf assets.tar.gz 
+mv /home/$(whoami)/Qv2ray/assets /home/$(whoami)/.config/qv2ray/
 # changing contents of .desktop file
-sudo cp ./v2ray/icon.jpeg /home/perticon/.config/qv2ray/icon.jpeg
-sudo mv ~/Qv2ray.AppImage /home/perticon/.config/qv2ray/Qv2ray.AppImage
+cd /home/$(whoami)/.config/qv2ray
+sudo cp ./v2ray/icon.jpeg /home/$(whoami)/.config/qv2ray/icon.jpeg
+sudo mv ~/Qv2ray.AppImage /home/$(whoami)/.config/qv2ray/Qv2ray.AppImage
 sudo cp ./v2ray/qv2ray.desktop ~/.local/share/applications/qv2ray.desktop
-
