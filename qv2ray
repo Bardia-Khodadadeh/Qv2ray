@@ -10,7 +10,9 @@ sudo apt-get install unzip
 cd ~
 chmod a+x Qv2ray.AppImage
 sudo ./Qv2ray.AppImage
-cd /home/$(whoami)/.config/qv2ray/
+cd /home/$(whoami)/.config
+mkdir qv2ray
+cd qv2ray
 mkdir vcore
 unzip /home/$(whoami)/temp/v2ray_core.zip -d /home/$(whoami)/.config/qv2ray/vcore
 rm ~/temp/v2ray_core.zip
@@ -19,6 +21,6 @@ tar -xvzf assets.tar.gz
 mv /home/$(whoami)/Qv2ray/assets /home/$(whoami)/.config/qv2ray/
 # changing contents of .desktop file
 cd /home/$(whoami)/.config/qv2ray
-sudo cp ./v2ray/icon.jpeg /home/$(whoami)/.config/qv2ray/icon.jpeg
+sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray//icon.jpeg /home/$(whoami)/.config/qv2ray/icon.jpeg
 sudo mv ~/Qv2ray.AppImage /home/$(whoami)/.config/qv2ray/Qv2ray.AppImage
-sudo cp ./v2ray/qv2ray.desktop ~/.local/share/applications/qv2ray.desktop
+sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray/ ~/.local/share/applications/qv2ray.desktop
