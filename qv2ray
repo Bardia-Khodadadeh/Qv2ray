@@ -23,4 +23,4 @@ mv /home/$(whoami)/Qv2ray/assets /home/$(whoami)/.config/qv2ray/
 cd /home/$(whoami)/.config/qv2ray
 sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray//icon.jpeg /home/$(whoami)/.config/qv2ray/icon.jpeg
 sudo mv ~/Qv2ray.AppImage /home/$(whoami)/.config/qv2ray/Qv2ray.AppImage
-sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray/ ~/.local/share/applications/qv2ray.desktop
+sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray/qv2ray.desktop ~/.local/share/applications/qv2ray.desktop
