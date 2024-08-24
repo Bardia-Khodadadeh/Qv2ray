@@ -1,7 +1,7 @@
 # Installing qv2ray on Ubuntu
 ``` bash
 cd ~
-
+git clone https://github.com/Bardia-Khodadadeh/Qv2ray.git
 mkdir ~/temp
 cd temp
 sudo add-apt-repository universe
