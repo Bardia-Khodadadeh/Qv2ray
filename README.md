@@ -12,7 +12,8 @@ wget -O v2ray_core.zip https://github.com/v2ray/v2ray-core/releases/download/v4.
 sudo apt-get install unzip
 cd ~
 chmod a+x Qv2ray.AppImage
-sudo ./Qv2ray.AppImage
+sudo ./Qv2ray.AppImage & QVRAY_PID=$!
+sudo kill $QVRAY_PID
 cd /home/$(whoami)/.config
 mkdir qv2ray
 cd qv2ray
