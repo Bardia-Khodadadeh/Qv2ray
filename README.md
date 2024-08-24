@@ -1,5 +1,7 @@
 # Installing qv2ray on Ubuntu
 ``` bash
+cd ~
+
 mkdir ~/temp
 cd temp
 sudo add-apt-repository universe
@@ -21,7 +23,7 @@ cd ~/Qv2ray
 tar -xvzf assets.tar.gz 
 mv /home/$(whoami)/Qv2ray/assets /home/$(whoami)/.config/qv2ray/
 ``` 
-#### changing contents of .desktop file
+#### Changing contents of .desktop file
 ``` bash
 cd /home/$(whoami)/.config/qv2ray
 sudo cp /home/$(whoami)/.config/qv2ray/assets/v2ray//icon.jpeg /home/$(whoami)/.config/qv2ray/icon.jpeg
